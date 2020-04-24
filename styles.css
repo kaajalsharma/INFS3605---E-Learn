@@ -1,0 +1,311 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  height:100%;
+}
+
+/*Login Page CSS*/
+  form {
+  border: none;
+  align-content: center;
+  }
+
+  input[type=text], input[type=password] {
+  width: 300px;
+  padding: 10px 20px;
+  margin: auto;
+  margin-top:8px;
+  margin-bottom: 5px;
+  display: list-item;
+  border: 1px solid rgb(198, 250, 177);
+  }
+
+  button {
+  background-color: rgb(73, 206, 46);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  display: list-item;
+  }
+  
+  button:hover{
+  opacity:0.8
+  }
+
+  .imgcontainer {
+  text-align: center;
+  width: 400px;
+  height: 160px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  img.avatar {
+  width: 50%;
+  }
+
+  .lgncontainer {
+  padding: 10px 30px;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  align-content: center;
+  }
+
+  span.psw {
+  float: right;
+  padding-top: 16px;
+  }
+
+  hr.border{
+  border-top: 7px solid #bbb;
+  opacity: 60%;
+  border-radius: 5px;
+  }
+
+  .button {
+  text-align: center;
+  position: relative;
+  margin:auto;
+  margin-top: 15px;
+  }
+
+
+/*Student Home Page CSS*/
+.summaryitems {
+    height: 100px;
+    background-color: #FAFAFA;
+    color:black;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.summaryitems .container{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.containdiv{
+  display: flex;
+  margin-top: 85px;
+}
+.left{
+  height: 420px;
+  margin-bottom: 110px;
+  margin-left: 15px;
+  width: 50%;
+  background: white;
+}
+.right {
+    height: 420px;
+    margin-bottom: 80px;
+    margin-right: 15px;
+    flex-grow: 1;
+    background: white;
+}
+.courses{
+  height: 100px;
+  background: #FAFAFA;
+  color: black;
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+
+/*Side and Top Bar Navigation CSS*/
+
+  *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper{
+    margin:0;
+  }
+
+    .wrapper .top_navbar {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        
+        position: absolute;
+        top: 0px;
+        color: #555555;
+    }
+
+        .wrapper .top_navbar .hamburger {
+            width: 80px;
+            height: 60px;
+            background: #ECECEC;
+            padding: 0;
+            cursor: pointer;
+        }
+
+            .wrapper .top_navbar .hamburger li a {
+                display: block;
+                padding-left: 30px;
+                padding-top: 20px;
+                cursor: pointer;
+                color: #555555;
+                width: 80px;
+                height: 60px;
+            }
+
+        .wrapper .top_navbar .top_menu {
+            width: 100%;
+            height: 60px;
+            background: #ECECEC;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+
+            .wrapper .top_navbar .top_menu .logo {
+                color: #555555;
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+  .wrapper .top_navbar .top_menu ul{
+  display: flex;
+  }
+
+    .wrapper .top_navbar .top_menu ul li a {
+        display: block;
+        margin: 0 10px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        color: #555555;
+    }
+
+  .wrapper .top_navbar .top_menu ul li a:hover{
+    cursor: pointer;
+  }
+
+    .wrapper .sidebar {
+        position: absolute;
+        top: 140px;
+        left: 5px;
+        background: #FAFAFA;
+        width: 80px;
+        height: 100%;
+        align-content: center;
+    }
+
+        .wrapper .sidebar ul li a {
+            display: block;
+            padding: 10px;
+            color: #888888;
+            position: relative;
+            margin-bottom: 1px;
+            background: #FAFAFA;
+            white-space: nowrap;
+            align-content: center;
+        }
+
+
+  .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+      background: #D4D4D4;
+      color: #fff;
+  }
+
+  .wrapper .sidebar ul li a:hover:before,
+  .wrapper .sidebar ul li a.active:before{
+    display: block;
+  }
+
+  .wrapper .sidebar ul li a span.icon{
+      margin:5px;
+      text-align: center;
+      display: block;
+  }
+
+  .wrapper .sidebar ul li a span.title{
+      margin:0;
+      text-align: center;
+      display:block;
+  }
+
+  .wrapper .main_container{
+  width: (100% - 200px);
+  margin-top: 70px;
+  margin-left: 80px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  }
+
+  .wrapper .main_container .item{
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 100%;
+  }
+
+.top-container {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+  /*Workspace Sessions CSS*/
+  .sessions{
+    margin-top:10px;
+    margin-right:70px;
+    padding-top:20px;
+    padding-left:20px;
+    background:white;
+    width:calc(100%-40px);
+    display: block;
+    background: #FAFAFA;
+    height:180px;
+}
+
+.workshop{
+    width: 140px;
+    height: 140px;
+    margin-right:30px;
+    background: white;
+    align-items: center;
+    display: inline-block;
+}
+
+.workshop ul li a{
+    display: block;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.workshop ul li a span.icon{
+    text-align: center;
+    display: block;
+}
+
+.workshop ul li a span.title{
+    text-align: center;
+    display:block;
+}
+
+
+
+
